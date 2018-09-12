@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|PT+Sans+Narrow|Varela+Round" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Video Background CSS -->
+  <link rel="stylesheet" href="css/video.css">
+  <title>Imagination | Home</title>
+</head>
+
+<body id="home" class="scrollspy">
+  <!-- Header -->
+  <header class="v-header containerVid">
+    <div class="fullscreen-video-wrap">
+      <video preload="non" autoplay="true" loop muted>
+        <source src="video.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="header-overlay"></div>
+    <div class="header-content">
+      <img src="img/logoWhite.png" alt="Imagination Logo" class="responsive-img">
+    </div>
+  </header>
+  <!-- FAB -->
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large blue pulse">
+      <i class="large material-icons">menu</i>
+    </a>
+      <ul>
+        <li><a class="btn-floating tooltipped red" data-position="left" data-tooltip="Home"><i class="material-icons">home</i></a></li>
+        <li><a class="btn-floating tooltipped purple" data-position="left" data-tooltip="Video Gallery"><i class="material-icons">video_library</i></a></li>
+        <li><a class="btn-floating tooltipped orange darken-1" data-position="left" data-tooltip="Photo Gallery"><i class="material-icons">photo_library</i></a></li>
+        <li><a class="btn-floating tooltipped blue" data-position="left" data-tooltip="Team"><i class="material-icons">people</i></a></li>
+        <li><a class="btn-floating tooltipped green" data-position="left" data-tooltip="Contact Us"><i class="material-icons">phone</i></a></li>
+      </ul>
+  </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <!-- My custom script -->
+  <script>
+    $(document).ready(function() {
+      // Init Scrollspy
+      $('.scrollspy').scrollSpy();
+      // tooltipped
+      $('.tooltipped').tooltip();
+      // Init Slider
+      $('.slider').slider({
+        indicators: false,
+        height: 900,
+        transition: 500,
+        interval: 6000
+      });
+      // parallax
+      $('.parallax').parallax();
+      // modals
+      $('.modal').modal();
+      // team Slider
+      $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true
+      });
+    });
+  </script>
+  <!-- AOS SCRIPT -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
