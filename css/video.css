@@ -56,3 +56,52 @@ body {
     padding-left: 3rem;
   }
 }
+
+/* Banner */
+.banner {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.banner-overlay {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #225470;
+  z-index: 1;
+  opacity: 0.77;
+}
+
+.banner-content {
+  z-index: 2;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-weight: bolder;
+  padding: 3px;
+  background: grey;
+  opacity: .5;
+}
+
+/* Banner 1: About us */
+.banner1 {
+  background-image: url('../img/b1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Banner2: Achievements */
+.banner2 {
+  background-image: url('../img/b2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
