@@ -50,14 +50,62 @@ body {
   z-index: 2;
 }
 
-@@media (max-width:960px) {
+@@media (max-width: 960px) {
   .containerVid {
     padding-right: 3rem;
     padding-left: 3rem;
   }
 }
 
+/* Page Scroll Animation */
+
+.box {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.box span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 5px solid #fff;
+  border-right: 5px solid #fff;
+  transform: rotate(45deg);
+  margin: -8px;
+  animation: animate 2s infinite;
+}
+
+.box span:nth-child(2) {
+  animate-delay: -0.2s;
+  transform: rotate(45deg) translate(-20px, -20px);
+}
+
+.box span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-10px, -10px);
+  }
+  50% {
+    opacity: 1;
+    /* transform: rotate(45deg) translate(0px, 0px); */
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+}
+
+/* Page Scroll Animation End */
+
 /* Banner */
+
 .banner {
   height: 50vh;
   position: relative;
@@ -91,6 +139,7 @@ body {
 }
 
 /* Banner 1: About us */
+
 .banner1 {
   background-image: url('../img/b1.jpg');
   background-repeat: no-repeat;
@@ -99,6 +148,7 @@ body {
 }
 
 /* Banner2: Achievements */
+
 .banner2 {
   background-image: url('../img/b2.jpg');
   background-repeat: no-repeat;
