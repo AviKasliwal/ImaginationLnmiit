@@ -24,6 +24,8 @@
 </head>
 
 <body id="home" class="scrollspy">
+    <div id="loading"></div>
+
   <!-- Header -->
   <header class="v-header containerVid">
     <div class="fullscreen-video-wrap">
@@ -259,7 +261,7 @@
         <div class="col s12 m3">
           <div class="card z-depth-3">
             <div class="card-image">
-              <img src="img/img/p16.jpg" alt="" class="materialboxed responsive-image">
+              <img src="img/img/p16.jpeg" alt="" class="materialboxed responsive-image">
 
             </div>
             <div class="card-content">
@@ -385,7 +387,7 @@
         <div class="row">
           <!-- TODO: Make a constraint to word limit -->
           <div class="input-field col s12">
-            <i class="material-icons prefix">mode_edit</i>
+            <i class="material-icons prefix"></i>
             <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
             <label for="icon_prefix2">Your Message Here:</label>
           </div>
@@ -406,20 +408,30 @@
   <!-- FAB -->
   <div class="fixed-action-btn">
     <a class="btn-floating btn-large blue pulse">
-      <i class="large material-icons">menu</i>
+      <i class="large material-icons">camera</i>
     </a>
     <ul>
-      <li><a class="btn-floating tooltipped red" data-position="left" data-tooltip="Home"><i class="material-icons">home</i></a></li>
+   
       <li><a class="btn-floating tooltipped purple" data-position="left" data-tooltip="Event Coverage"><i class="material-icons">video_library</i></a></li>
       <li><a class="btn-floating tooltipped orange darken-1" data-position="left" data-tooltip="Photo Gallery"><i class="material-icons">photo_library</i></a></li>
       <li><a class="btn-floating tooltipped blue" data-position="left" data-tooltip="Team" href="team.html" target="_blank"><i class="material-icons">people</i></a></li>
-      <li><a class="btn-floating tooltipped green" data-position="left" data-tooltip="Contact Us"><i class="material-icons">phone</i></a></li>
+      <li><a class="btn-floating tooltipped green" data-position="left" data-tooltip="Contact Us"><i class="material-icons">chat</i></a></li>
     </ul>
   </div>
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <!-- My custom script -->
+  <script>
+     function hideLoader() {
+    $('#loading').hide();
+    }
+
+    
+
+// Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
+    setTimeout(hideLoader, 5000);
+  </script>
   <script>
     $(document).ready(function() {
       // Init Scrollspy
