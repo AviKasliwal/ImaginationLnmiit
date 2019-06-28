@@ -1,70 +1,101 @@
+body{
+    /* The image used */
+    background-image: url("images/backteam.jpeg");
+
+  }
+  .no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('../ima/830.gif') center no-repeat #fff;
+}
 #team {
-font-family: 'Indie Flower', cursive;
-color: white;
-background: #ad5389;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+    font-family: 'Indie Flower', cursive;
+    color: #fff
+    
+   
+    
 }
-#alumni-text{
-  color: black;
-}
-
-.our-team{
-    text-align: center;
-    overflow: hidden;
-    position: relative;
-}
-.our-team img{
-    width: 100%;
-    height: auto;
-    transition: all 0.5s ease-in-out 0s;
-}
-.our-team:hover img{ transform: scale(1.2); }
-.our-team .social{
-    list-style: none;
-    padding: 30px 15px;
-    margin: 0;
-    background: #0facf3;
-    border-bottom-right-radius: 50px;
-    position: absolute;
-    top: 0;
-    left: -50%;
-    transition: all 0.4s ease-in-out 0s;
-}
-.our-team:hover .social{ left: 0; }
-.our-team .social li{ display: block; }
-.our-team .social li a{
-    display: block;
-    padding: 3px 0;
-    font-size: 18px;
-    color: #fff;
-    transition: all 0.3s ease-in-out 0s;
-}
-.our-team .social li:first-child a{ padding-top: 0; }
-.our-team .social li:last-child a{ padding-bottom: 0; }
-.our-team .social li a:hover{ color: #000; }
-.our-team .team-content{
-    width: 100%;
-    padding: 5px 10px;
-    background: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-.our-team .title{
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: #fff;
-    margin: 0 0 5px 0;
-}
-.our-team .post{
-    display: block;
-    font-size: 12px;
-    color: #0facf3;
-}
-@media only screen and (max-width: 990px){
-    .our-team{ margin-bottom: 30px; }
-}
+    #alumni-text{
+      color: black;
+    }
+    
+    .our-team{
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+    }
+    .our-team img{
+        width: 100%;
+        height: auto;
+        transition: all 0.5s ease-in-out 0s;
+        filter: url(filters.svg#grayscale);
+      filter: gray; /* IE5+ */
+      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+      -webkit-transition: all .8s ease-in-out;
+      border-radius: 50%;
+ 
+    transition: all .3s ease-in-out;
+    }
+    .our-team:hover img{ transform: scale(1.2); 
+        filter: none;
+        -webkit-filter: grayscale(0);
+        -webkit-transform: scale(1.05);
+        border-radius:0;  
+  cursor: pointer;
+    }
+    .our-team .social{
+        list-style: none;
+        padding: 30px 15px;
+        margin: 0;
+        background: #0facf3;
+        border-bottom-right-radius: 50px;
+        position: absolute;
+        top: 0;
+        left: -50%;
+        transition: all 0.4s ease-in-out 0s;
+    }
+    .our-team:hover .social{ left: 0; }
+    .our-team .social li{ display: block; }
+    .our-team .social li a{
+        display: block;
+        padding: 3px 0;
+        font-size: 18px;
+        color: #fff;
+        transition: all 0.3s ease-in-out 0s;
+    }
+    .our-team .social li:first-child a{ padding-top: 0; }
+    .our-team .social li:last-child a{ padding-bottom: 0; }
+    .our-team .social li a:hover{ color: rgba(0, 0, 0, 0.200); }
+    .our-team .team-content{
+        width: 100%;
+        padding: 5px 1px;
+        background: rgba(0, 0, 0, 0.500);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .our-team .title{
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #fff;
+        margin: 0 0 5px 0;
+    }
+    .our-team .post{
+        display: block;
+        font-size: 13px;
+        color: white;
+    }
+    @media only screen and (max-width: 990px){
+        .our-team{ margin-bottom: 30px; }
+    }
+    #footer{
+        font-size: 20px;
+        text-align: center;
+    }
