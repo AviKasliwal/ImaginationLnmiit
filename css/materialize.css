@@ -3451,6 +3451,7 @@ table span.badge {
   margin-right: -0.75rem;
 }
 
+
 .section {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -3574,6 +3575,16 @@ table span.badge {
   margin-left: auto;
   left: auto;
   right: auto;
+  font-family: 'Arial';
+ 
+  font-style: italic;
+}
+.row .col.s13{
+  width: 100%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+  font-family:'Gabriola'
 }
 
 .row .col.offset-s1 {
@@ -3746,7 +3757,7 @@ table span.badge {
     right: auto;
   }
   .row .col.m5 {
-    width: 41.6666666667%;
+    width: 26.5%;
     margin-left: auto;
     left: auto;
     right: auto;
@@ -3803,7 +3814,7 @@ table span.badge {
     left: 8.3333333333%;
   }
   .row .col.offset-m2 {
-    margin-left: 16.6666666667%;
+    margin-left: 10%;
   }
   .row .col.pull-m2 {
     right: 16.6666666667%;
@@ -4758,6 +4769,7 @@ small {
   font-weight: 300;
 }
 
+
 .card .card-title.activator {
   cursor: pointer;
 }
@@ -4872,7 +4884,9 @@ small {
   top: 0;
   bottom: 0;
   width: 100%;
+ 
 }
+
 
 .card .card-image .card-title {
   color: #fff;
@@ -5834,7 +5848,6 @@ body.keyboard-focused .dropdown-content li:focus {
 .modal.bottom-sheet {
   top: auto;
   bottom: -100%;
-  margin: 0;
   width: 100%;
   max-height: 45%;
   border-radius: 0;
@@ -8486,10 +8499,19 @@ input[type=range]::-ms-thumb {
   visibility: visible;
   -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
           animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-  -webkit-transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-  transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-  transition: opacity .3s, transform .3s, visibility 0s 1s;
-  transition: opacity .3s, transform .3s, visibility 0s 1s, -webkit-transform .3s;
+  -webkit-transition: opacity .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
 }
 
 .tap-target {
@@ -8542,10 +8564,19 @@ input[type=range]::-ms-thumb {
 
 .tap-target-wave::after {
   visibility: hidden;
-  -webkit-transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-  transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-  transition: opacity .3s, transform .3s, visibility 0s;
-  transition: opacity .3s, transform .3s, visibility 0s, -webkit-transform .3s;
+  -webkit-transition: opacity .3s,
+ visibility 0s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ visibility 0s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s,
+ -webkit-transform .3s;
   z-index: -1;
 }
 
@@ -9065,3 +9096,4 @@ input[type=range]::-ms-thumb {
     margin-top: 1.2rem;
   }
 }
+
