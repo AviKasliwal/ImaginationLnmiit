@@ -45,13 +45,14 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background: #225470;
+  background: rgb(7, 7, 20);
   z-index: 1;
   opacity: 0.55;
 }
 
 .header-content {
   z-index: 2;
+  opacity: 0.5
 }
 
 @@media (max-width: 960px) {
@@ -143,6 +144,11 @@ body {
 }
 
 /* Banner 1: About us */
+.frame{
+  border-style: solid;
+  border-color: rgb(240,240,255);
+  font-family: 'Courier New';
+}
 
 .banner1 {
   background-image: url('../img/b1.jpg');
@@ -186,8 +192,16 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-
-
+.banner6 {
+  background-image: url('../img/b6.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.evefont{
+  text-decoration-color: white;
+  text-decoration: underline;
+}
 /* Social Icons */
 .links {
   position: relative;
